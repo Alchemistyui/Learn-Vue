@@ -14,6 +14,8 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
   </div>
+
+  
 </template>
 
 <script>
@@ -21,10 +23,12 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'emmmm'
+      msg: 'Alchemist'
     }
   }
 }
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
