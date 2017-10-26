@@ -7,6 +7,16 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    
+    <div id="hello">{{message}}</div>
+
+    <div id="app-2"><span v-if="seen">看到我啦</span></div>
+
+    <div id="app-3">
+    	<ol>
+    	<li v-for="todo in todos">
+    		{{todo.item}}
+    	</li>
+        </ol>
+    </div>
   </body>
 </html>

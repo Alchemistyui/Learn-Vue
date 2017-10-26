@@ -7,7 +7,6 @@
         {{item.label}}
       </li>
     </ul>
-
   </div>
 </template>
 
