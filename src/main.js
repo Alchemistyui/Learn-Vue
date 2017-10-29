@@ -19,15 +19,15 @@ var hello = new Vue ({
 	}
 })
 
-var app_2 = new Vue ({
+var app2 = new Vue ({
 	el: '#app-2',
 	data: {
 		seen: false
 	}
 })
 
-var app_3 = new Vue ({
-	el: '#app_3',
+var app3 = new Vue ({
+	el: '#app-3',
 	data: {
 		todos: [
 		{item: 'no.1'},
@@ -35,3 +35,41 @@ var app_3 = new Vue ({
 		]
 	}
 })
+
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    message: 'Hello Vue.js!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+
+
+var app5 = new Vue ({
+	el: '#app-5',
+	data: {
+		message: ''
+	}
+
+})
+
+Vue.component ('todo-item', {
+	props: ['todo'],
+	template: '<li>{{todo.text}}</li>'
+})
+
+var app7 = new Vue ({
+	el: '#app-6',
+	data: {
+		groceryList: [
+		{id: 0, text: '蔬菜'},
+		{id: 1, text: '水果'},
+		{id: 2, text: '肉类'}
+		]
+	}
+})
+
